@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>NBA Fantasy</title>
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="container">
+		<nav id="topNav">
+			<ul>
+				<li><a href="#">Players</a></li>
+				<li><a href="#">Teams</a></li>
+				<li><a href="#">Comparisons</a></li>
+				<li><a href="#">Trade</a></li>
+				<li><a href="#">Saved Trades</a></li>
+			</ul>
+		</nav>
+		<div id="wrapper">
+			<div class="dropdownMenus">
+			    <div class="dropdown left">
+				    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><h4 class="left">Teams</h4>
+				    <span class="caret right"></span></button>
+				    <ul class="dropdown-menu teams">
+				    </ul>
+				</div>
+				<div class="dropdown right">
+				    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><h4 class="left">Time Period</h4>
+				    <span class="caret right"></span></button>
+				    <ul class="dropdown-menu timePeriod">
+				    </ul>
+				</div>
+			</div>	
+			<div class="table"> <!-- APPLY categories automatically??!??! -->
+				<table id="teamsTable1" cellpadding="0" cellspacing="0">
+					<thead class="tableHeader">
+						<tr>
+							<th class="tableWL watch-list"> </th>
+							<th class="tablePlayer player">Player</th>
+							<th class="tableTeam team">Team</th>
+							<th class="tableCat pRank">P-Rank</th>
+							<th class="tableCat sRank">S-Rank</th>
+							<th class="tableCat fga">FGA</th>
+							<th class="tableCat fgp">FG%</th>
+							<th class="tableCat fta">FTA</th>
+							<th class="tableCat ftp">FT%</th>
+							<th class="tableCat 3pt">3PT</th>
+							<th class="tableCat pts">PTS</th>
+							<th class="tableCat rbd">RBD</th>
+							<th class="tableCat ass">ASS</th>
+							<th class="tableCat stl">STL</th>
+							<th class="tableCat blk">BLK</th>
+							<th class="tableCat tos">TOS</th>
+						</tr>
+					</thead>
+					<tbody class="tableBody">
+						<tr>
+							<td class="center"><svg class="wl-fill"><polygon points="16,20.9 11.1,23.5 12,18.1 8,14.2 13.5,13.4 16,8.5 18.5,13.4 24,14.2 20,18.1 20.9,23.5 "></svg></td>
+							<td class="player">Kevin Durant<fp> - GSW - SF,PF</fp></td>
+							<td class="team">Dougie McDerm</td>
+							<td class="center">2nd</td>
+							<td class="center">1st</td>
+							<td class="center">17.0</td>
+							<td class="center">.537</td>
+							<td class="center">6.7</td>
+							<td class="center">.862</td>
+							<td class="center">1.9</td>
+							<td class="center pts">26.0</td>
+							<td class="center">8.6</td>
+							<td class="center">4.7</td>
+							<td class="center">1.1</td>
+							<td class="center">1.7</td>
+							<td class="center">2.3</td>
+						</tr>
+						<tr>
+							<td class="center"><svg class="wl-stroke"><polygon points="16,20.9 11.1,23.5 12,18.1 8,14.2 13.5,13.4 16,8.5 18.5,13.4 24,14.2 20,18.1 20.9,23.5 "></svg></td>
+							<td>Steph Curry<fp> - GSW - PG,SG</fp></td>
+							<td>Jerk Store</td>
+							<td class="center">1st</td>
+							<td class="center">4th</td>
+							<td class="center">17.4</td>
+							<td class="center">.469</td>
+							<td class="center">5</td>
+							<td class="center">.929</td>
+							<td class="center">3.8</td>
+							<td class="center pts">24.7</td>
+							<td class="center">4.3</td>
+							<td class="center">5.9</td>
+							<td class="center">1.7</td>
+							<td class="center">0.2</td>
+							<td class="center">3.0</td>
+						</tr>
+					</tbody>
+					<tfoot class="tableFooter">
+						<tr>
+							<td class="totalWL"> </td>
+							<td class="totalPlayer"> </td>
+							<td class="totalTeam"> </td>
+							<td class="totalCat"> </td>
+							<td class="totalCat"> </td>
+							<td class="totalCat">FGA</td>
+							<td class="totalCat">FG%</td>
+							<td class="totalCat">FTA</td>
+							<td class="totalCat">FT%</td>
+							<td class="tableCat">3PT</td>
+							<td class="totalCat pts"> </td>
+							<td class="totalCat">RBD</td>
+							<td class="totalCat">ASS</td>
+							<td class="totalCat">STL</td>
+							<td class="totalCat">BLK</td>
+							<td class="totalCat">TOS</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

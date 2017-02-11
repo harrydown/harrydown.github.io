@@ -1,0 +1,327 @@
+/* -------------------------------------- 
+GLOBAL STYLES
+-------------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-60deg, #927F98, #7F6A86); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-60deg, #927F98, #7F6A86); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-60deg, #927F98, #7F6A86); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-60deg, #927F98, #7F6A86); /* Standard syntax */
+}
+
+a{
+    text-decoration: none;
+    color: #313131;
+}
+
+a:active, a:hover {
+    outline: 0 none;
+    text-decoration: none;
+}
+fp {
+    font-size: 9px;
+    opacity: .54;
+}
+
+.center {
+    text-align: center;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+
+.wl-fill {
+    height: 32px;
+    width: 32px;
+    fill:#D06F27;
+    stroke-miterlimit:10;
+}
+
+.wl-stroke {
+    height: 32px;
+    width: 32px;
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    fill:none;
+    stroke:#313131;
+    opacity: .5;
+    stroke-miterlimit:10;
+}
+.wl-stroke:hover {
+    height: 32px;
+    width: 32px;
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    fill:#CDCDCD;
+    stroke:none;
+    opacity: .5;
+    stroke-miterlimit:10;
+    box-shadow: 10px ;
+}
+
+
+/* -------------------------------------- 
+CONTAINER STRUCTURE 
+-------------------------------------- */
+
+#container {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 1280px;
+    position: relative;
+    width: 100%;
+    top: 32px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+#topNav {
+    display: block;
+    height: 96px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    background: rgba(24,24,24,.4);
+}
+#wrapper {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    background-color: #313131;
+    padding: 32px;
+}
+.navbar-toggle:focus {
+    outline: 0 none;
+}
+#topNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#topNav ul li {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 36px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 19.7%;
+    line-height: 24px;
+}
+#topNav ul li a {
+    font-size: 18px;
+    color: rgba(255,255,255,0.54);
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+}
+
+#topNav ul li a:hover {
+    font-size: 18px;
+    color: rgba(255,255,255,.87);
+    vertical-align: middle;
+    /*font-weight: bold;*/
+}
+
+.bottom-outline{
+    /*outline: 1px solid rgba(255,255,255,0.87);*/
+    background:rgba(255,255,255,0.3);
+}
+
+
+/* -------------------------------------- 
+DROPDOWN
+-------------------------------------- */
+
+.dropdown {
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    width: 196px;
+}
+.dropdown-toggle:focus {
+    outline: 0 none;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+    outline: 0 none;
+    text-decoration: none;
+}
+.open > a {
+    outline: 0 none;
+}
+.btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
+    outline: 0 none;
+}
+
+.dropdownMenus {
+    display: block;
+    height: 48px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.btn-primary {
+    background-color: #313131;
+    border: 0px solid #ffffff;
+    color:#ffffff;
+    cursor: pointer;
+    font-size: 12px;
+}
+.btn {
+    -moz-user-select: none;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 0 6px 8px;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+    height: 32px;
+}
+.btn:hover {
+    background-color: #4C4C4C;
+    color: #ffffff;
+}
+
+.caret {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px dashed;
+    display: inline-block;
+    height: 0;
+    vertical-align: middle;
+    width: 0;
+    margin: 7px 8px 0 0;
+}
+.dropdown-menu {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    display: none;
+    font-size: 12px;
+    list-style: outside none none;
+    margin: 0;
+    padding: 5px 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    z-index: 1000;
+}
+.dropdown-menu li {
+    color: #313131;
+    opacity: .87;
+    border: 0;
+    border-radius: 0;
+    font-size: 12px;
+    list-style: outside none none;
+    margin: 0;
+    position: relative;
+    text-align: left;
+    z-index: 1000;
+}
+.dropdown-menu li:hover {
+    background-color: rgba(49,49,49,.1);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 0 12px 8px;
+}
+
+.open > .dropdown-menu {
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    color: #313131;
+}
+
+/* -------------------------------------- 
+TABLES
+-------------------------------------- */
+.table {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    max-width: 1216px;
+    background-color: #ffffff;
+    font-size: 12px;
+}
+.tableHeader {
+    background-color: #313131;
+    opacity: 0.87;
+    color: #ffffff;s
+    text-align: center;
+    box-shadow: 0px 0px 7px rgba(0,0,0,.7);
+}
+tbody {
+    color: #313131;
+}
+.tableFooter {
+    background-color: #313131;
+    opacity: 0.54;
+    color: #ffffff;
+    text-align: center;
+}
+.tableWL {
+    width: 40px;
+}
+.tablePlayer {
+    width: 232px;
+}
+.tablePlayerTest {
+    width: 264px;
+}
+.tableTeam {
+    width: 112px;
+}
+.tableCat {
+    width: 64px;
+}
+table {
+    border: none;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    display: block;
+}
+tr {
+    height: 32px;
+}
+
+tbody tr {
+    height:32px;
+}
+
+/*
+td {
+    border-left:1px solid rgba(103,103,103,.54);
+}
+*/
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+    border-top: 4px solid #ffffff;
+}
+tbody tr:nth-child(even) {
+   background-color:#EAEAEA;
+}
+
+
+.btn h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+}
