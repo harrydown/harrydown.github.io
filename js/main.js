@@ -46,25 +46,6 @@ var oauthAccess = $.getJSON(yahooURI, function() {
 // Set another completion function for the request above
 
 
-/*
-jqxhr.complete(function() {
-  console.log( "second complete" );
-});
-
-
-app.get('/auth/yahoo', function(req, res) {
-  var authorizationUrl = 'https://api.login.yahoo.com/oauth2/request_auth';
-
-  var queryParams = qs.stringify({
-    client_id: 'dj0yJmk9RVFyRTQzMmpRTTB0JmQ9WVdrOVlVRjViVTU1TkRnbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD01Yw--',
-    redirect_uri: 'harrydown.com',
-    response_type: 'code'
-  });
-
-  res.redirect(authorizationUrl + '?' + queryParams);
-});
-*/
-
 
 
 
