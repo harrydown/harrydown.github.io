@@ -44,7 +44,7 @@ var oauthAccess = $.getJSON(yahooURI, function() {
 // Perform other work here ...
  
 // Set another completion function for the request above
-
+// shouldn't be any funk here
 
 
 
