@@ -19,7 +19,7 @@ var teamTester = 'js/team-test-dougieMcderm.json';
 console.log('line19',teamTester);
 
 $.getJSON(teamTester, function(json) {
-    console.log('teamTester',json); // this will show the info it in firebug console
+    console.log('teamTester', json); // this will show the info it in firebug console
 });
 
 var yahooURI = "https://api.login.yahoo.com/oauth2/request_auth";
@@ -28,7 +28,7 @@ var yahooURI = "https://api.login.yahoo.com/oauth2/request_auth";
   yahooURI += "&response_type=token";
   yahooURI += "&language=en-us";
 
-var oauthAccess = $.getJSON( yahooURI, function() {
+var oauthAccess = $.getJSON(yahooURI, function() {
   console.log( "success" );
 })
   .done(function() {
@@ -44,6 +44,9 @@ var oauthAccess = $.getJSON( yahooURI, function() {
 // Perform other work here ...
  
 // Set another completion function for the request above
+
+
+/*
 jqxhr.complete(function() {
   console.log( "second complete" );
 });
@@ -60,6 +63,7 @@ app.get('/auth/yahoo', function(req, res) {
 
   res.redirect(authorizationUrl + '?' + queryParams);
 });
+*/
 
 
 
