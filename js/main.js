@@ -10,31 +10,55 @@ JSON API
 -------------------------------------- */
 
 
+
+
+
+
+
 var teamTester = 'js/team-test-dougieMcderm.json';
-console.log(teamTester);
+console.log('line19',teamTester);
 
 $.getJSON(teamTester, function(json) {
     console.log('teamTester',json); // this will show the info it in firebug console
 });
+
+var yahooURI = "https://api.login.yahoo.com/oauth2/request_auth";
+  yahooURI += "?client_id=dj0yJmk9RVFyRTQzMmpRTTB0JmQ9WVdrOVlVRjViVTU1TkRnbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD01Yw--";
+  yahooURI += "&redirect_uri=harrydown.com";
+  yahooURI += "&response_type=token";
+  yahooURI += "&language=en-us";
+
+var oauthAccess = $.getJSON( yahooURI, function() {
+  console.log( "success" );
+})
+  .done(function() {
+    console.log( "second success" );
+  })
+  .fail(function() {
+    console.log( "error" );
+  })
+  .always(function() {
+    console.log( "complete" );
+  });
+ 
+// Perform other work here ...
+ 
+// Set another completion function for the request above
+jqxhr.complete(function() {
+  console.log( "second complete" );
+});
+
 
 app.get('/auth/yahoo', function(req, res) {
   var authorizationUrl = 'https://api.login.yahoo.com/oauth2/request_auth';
 
   var queryParams = qs.stringify({
     client_id: 'dj0yJmk9RVFyRTQzMmpRTTB0JmQ9WVdrOVlVRjViVTU1TkRnbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD01Yw--',
-    redirect_uri: 'harrydown.com'/
+    redirect_uri: 'harrydown.com',
     response_type: 'code'
   });
 
   res.redirect(authorizationUrl + '?' + queryParams);
-});
-
-$.ajax({
-    type:"GET",
-    url:"https://api.login.yahoo.com/oauth2/request_auth?client_id=dj0yJmk9RVFyRTQzMmpRTTB0JmQ9WVdrOVlVRjViVTU1TkRnbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD01Yw--&redirect_uri=oob&response_type=code&language=en-us", 
-    data: {
-      username: 
-    }
 });
 
 
