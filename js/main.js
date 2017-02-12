@@ -47,9 +47,6 @@ var oauthAccess = $.getJSON(yahooURI, function() {
 // shouldn't be any funk here
 
 
-
-
-
 /* -------------------------------------- 
 ARRAYS
 -------------------------------------- */
