@@ -4,61 +4,61 @@
 			"id" : 1,
 			"name" : "Fennis Dembo",
 			"image" : "https://ct.yimg.com/cy/1687/25098099450_bde3d57ac9_90sq.jpg?ct=fantasy",
-			"position_lastSeason" : 10,
+			"position_lastSeason" : 10
 		}
 		{
 			"id" : 2,
 			"name" : "detlef schrempf",
 			"image" : "https://ct.yimg.com/cy/1616/25335345095_8393b40da1_90sq.jpg?ct=fantasy",
-			"position_lastSeason" : 9,
+			"position_lastSeason" : 9
 		}
 		{
 			"id" : 3,
 			"name" : "Dougie McDerm",
 			"image" : "https://ct.yimg.com/cy/1664/25044704450_5ee664b7bd_192sq.jpg?ct=fantasy",
-			"position_lastSeason" : 9,
+			"position_lastSeason" : 9
 		}
 		{
 			"id" : 4,
 			"name" : "God Shammgod",
 			"image" : "https://ct.yimg.com/cy/5627/30364499852_226e6fdd39_90sq.jpg?ct=fantasy",
-			"position_lastSeason" : 9,
+			"position_lastSeason" : 9
 		}
 		{
 			"id" : 5,
 			"name" : "Jerk Store",
 			"image" : "https://ct.yimg.com/cy/5716/22942590717_dc11ef1bb4_90sq.jpg?ct=fantasy",
-			"position_lastSeason" : 9,
+			"position_lastSeason" : 9
 		}
 		{
 			"id" : 6,
 			"name" : "Kingston Town",
 			"image" : "https://ct.yimg.com/cy/5659/30148401960_53ac2d365f_90sq.jpg?ct=fantasy",
-			"position_lastSeason" : 9,
+			"position_lastSeason" : 9
 		}
 		{
 			"id" : 7,
 			"name" : "Lamar Odom",
 			"image" : "https://ct.yimg.com/cy/1484/25242366201_30d5501ea7_90sq.jpg?ct=fantasy",
-			"position_lastSeason" : 9,
+			"position_lastSeason" : 9
 		}
 		{
 			"id" : 8,
 			"name" : "Luc Longley",
 			"image" : "https://ct.yimg.com/cy/5482/30438704301_8ce07342d8_90sq.jpg?ct=fantasy",
-			"position_lastSeason" : 9,
+			"position_lastSeason" : 9
 		}
 		{
 			"id" : 9,
 			"name" : "Manute Bol",
 			"image" : "https://s.yimg.com/dh/ap/fantasy/img/nba/icon_08_100.png",
-			"position_lastSeason" : 9,
+			"position_lastSeason" : 9
 		}
 		{
 			"id" : 10,
 			"name" : "White Chocolate",
 			"image" : "https://ct.yimg.com/cy/5726/30329187062_223bd84f7b_90sq.jpg?ct=fantasy",
-			"position_lastSeason" : 9,
+			"position_lastSeason" : 9
 		}
 	]
 }]
