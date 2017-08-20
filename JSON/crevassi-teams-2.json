@@ -1,5 +1,5 @@
 {
-	"teams": [
+	"teams": 
 		{
 		"id" : 1,
 		"name" : "Fennis Dembo",
@@ -12,5 +12,4 @@
 		"image" : "https://ct.yimg.com/cy/1616/25335345095_8393b40da1_90sq.jpg?ct=fantasy",
 		"position_lastSeason" : 9
 		}
-	]
 }
